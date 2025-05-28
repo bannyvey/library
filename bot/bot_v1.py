@@ -6,7 +6,7 @@ from aiogram.filters import Command
 import httpx
 
 # Токен бота от BotFather
-TOKEN = "7926492958:AAE2itjBHsbmd2qleDrik3munxwr3ta0nbA"
+TOKEN = ""
 API_URL = "http://localhost:8000/api"
 
 bot = Bot(token=TOKEN)
