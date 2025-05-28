@@ -5,7 +5,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 import httpx
 
-# Токен бота от BotFather
+
 TOKEN = ""
 API_URL = "http://localhost:8000/api"
 
