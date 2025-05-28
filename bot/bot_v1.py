@@ -122,7 +122,11 @@ async def return_book(message: Message):
     if book_id is None:
         return
     user_id = str(message.from_user.id)
-    data = await make_api_request(message, "post", f"{API_URL}/book/{book_id}/return", params={"user_id": user_id})
+    data = await make_api_request(
+        message,
+        "post",
+        f"{API_URL}/book/{book_id}/return", params={"user_id": user_id}
+    )
     if data:
         await message.reply(f"Вы успешно вернули книгу: {data['book']['title']}")
         if data['user_id']:
